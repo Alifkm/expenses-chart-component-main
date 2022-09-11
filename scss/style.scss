@@ -1,1 +1,91 @@
 @import 'config';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $cream;
+  font-family: $font-stack;
+}
+
+main {
+    height: 100vh;
+    @include flexProperty(center, center, column);
+    margin-inline: auto;
+    width: Min(500px, 90%);
+    overflow: hidden;
+
+    #section-top, #section-bottom {
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    #section-top {
+      @include flexProperty(space-between, center, null);
+      background-color: $soft-red;
+      padding: 1em 1.5em;
+      margin-bottom: 1em;
+
+      .left-div {
+        p {
+          color: $very-pale-orange;
+        }
+
+        p:nth-child(1) {
+          margin-bottom: 0.5em;
+        }
+
+        p:nth-child(2) {
+          @include fontProperty(Clamp(1.5rem, 5vw, 2rem), 700);
+        }
+
+      }
+    }
+
+    #section-bottom {
+      @include flexProperty(start, left, column);
+      background-color: $very-pale-orange;
+      padding: 1.5em;
+
+      h1 {
+        color: $dark-brown;
+        @include fontProperty(Clamp(1.3rem, 4vw, 1.6rem), 700);
+        margin-bottom: 2em;
+      }
+
+      hr {
+        margin: 1em 0;
+        border-color: $cream;
+      }
+
+      #other-information {
+        @include flexProperty(space-between, center, null);
+        margin-top: 1em;
+
+        p {
+          color: $medium-brown;
+          @include fontProperty(Clamp(0.8rem, 2vw, 1rem), null);
+        }
+
+        .😥 {
+          h2 {
+            color: $dark-brown;
+            @include fontProperty(Clamp(2rem, 5vw, 2.5rem), 700);
+          }
+        }
+
+        .😃 {
+          @include flexProperty(center, flex-end, column);
+          align-content: flex-end;
+
+          p:nth-child(1) {
+            color: $dark-brown;
+            @include fontProperty(null, 700);
+          }
+        }
+      }
+    }
+}

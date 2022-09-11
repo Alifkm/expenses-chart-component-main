@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f8e9dd;
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-inline: auto;
+  width: Min(500px, 90%);
+  overflow: hidden;
+}
+
+main #section-top, main #section-bottom {
+  border-radius: 20px;
+  width: 100%;
+}
+
+main #section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ec775f;
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+}
+
+main #section-top .left-div p {
+  color: #fffaf5;
+}
+
+main #section-top .left-div p:nth-child(1) {
+  margin-bottom: 0.5em;
+}
+
+main #section-top .left-div p:nth-child(2) {
+  font-size: Clamp(1.5rem, 5vw, 2rem);
+  font-weight: 700;
+}
+
+main #section-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fffaf5;
+  padding: 1.5em;
+}
+
+main #section-bottom h1 {
+  color: #382314;
+  font-size: Clamp(1.3rem, 4vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+main #section-bottom hr {
+  margin: 1em 0;
+  border-color: #f8e9dd;
+}
+
+main #section-bottom #other-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+}
+
+main #section-bottom #other-information p {
+  color: #93867b;
+  font-size: Clamp(0.8rem, 2vw, 1rem);
+}
+
+main #section-bottom #other-information .😥 h2 {
+  color: #382314;
+  font-size: Clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+
+main #section-bottom #other-information .😃 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+main #section-bottom #other-information .😃 p:nth-child(1) {
+  color: #382314;
+  font-weight: 700;
+}

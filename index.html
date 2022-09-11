@@ -17,31 +17,39 @@
   </style>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <main>
+    <section id="section-top">
+      <div class="left-div">
+        <p>My balance</p>
+        <p>$921.48</p>
+      </div>
+      <div class="right-div">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+    </section>
+    <section id="section-bottom">
+      <h1>Spending - Last 7 days</h1>
+      <canvas id="myChart"></canvas>
+      <hr>
+      <div id="other-information">
+        <div class="😥">
+          <p>Total this month</p>
+          <h2>$478.33</h2>  
+        </div>
+        <div class="😃">
+          <p>+2.4%</p>
+          <p>from last month</p>
+        </div>
+      </div>
+    </section>
+  </main>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Alifkm">Alif Kahfi</a>.
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>
