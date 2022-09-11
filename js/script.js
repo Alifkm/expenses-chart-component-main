@@ -42,7 +42,7 @@ fetch('./data.json').then(response => {
         data: datas,
         options: {
             responsive: true,
-            hoverBackgroundColor: 'hsl(186, 34%, 60%)',
+            hoverBackgroundColor: 'RGB(244, 162, 142)',
             borderRadius: 5,
             borderSkipped: false,
             scales: {
@@ -68,6 +68,14 @@ fetch('./data.json').then(response => {
                             };
                         }
                     }
+                },
+            },
+            onHover: (event, chartElement) => {
+                if(chartElement.length == 1) {
+                    event.native.target.style.cursor = "pointer";
+                }
+                if(chartElement.length == 0) {
+                    event.native.target.style.cursor = "default";
                 }
             }
         },
